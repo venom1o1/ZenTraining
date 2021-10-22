@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <!-- more bean definitions go here -->
+<bean class="com.zensar.Student" id="sobj" scope="singleton">
+<!-- setter injection -->
+
+<property name="sid" value="101" />
+<property name="sname" value="neeraj" />
+<property name="per" value="90" />
+
+<!-- constructor injection -->
+</bean>
+<bean class="com.zensar.Student" id = "sobj2">
+<constructor-arg value="1" />
+<constructor-arg value="Dhruv" />
+<constructor-arg value="100" />
+
+</bean>
+
+</beans>
